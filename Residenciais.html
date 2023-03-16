@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>De Arquitetura - Residenciais</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<style type="text/css">
+		
+		/* Configuração padrão da página
+		-------------------------------*/
+		body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%;
+			background-color: #101010;
+		}
+
+		footer{
+			background-color: black;
+		}
+		
+		.navbar{
+			background-color: black;
+		}
+		.navlink{
+			color: #ffdd08;
+		}
+		.conteudo {
+			color: #e1901f;
+			background-color: black;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		p{
+			margin-bottom: 20px;
+		}
+
+		.conteudo-titulo {
+			color: #e1901f;
+			position: absolute;
+			left: 0;
+			top: 45%;
+			width: 100%;
+			text-align: center;
+		}
+
+		.conteudo-titulo span.titulo {
+			color: #ffdf04;
+			background-color: rgb(0, 0, 0);
+			padding: 18px;
+			font-size: 25px;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+
+                *, 
+        *::after, 
+        *:after,
+        *::before, 
+        *:before { box-sizing: border-box; }
+        :root {
+            --bg-color: #cfd8dc;
+            --font-base: 16px;
+            --gutter: var(--font-base);
+            --card-shadow: rgba(0,0,0,.4) 0 3px 4px;
+        }	
+        body { 
+            font-size: var(--font-base);
+            background-color: var(--colorGrey); 
+        }
+
+        main { 
+            padding: 1rem; 
+            padding-bottom: 0;
+        }
+        main .main-title { 
+            color: black;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+
+    /*------------------*\
+        GALLERY
+    \*------------------*/
+    .Gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* .Gallery > * { outline: 4px solid steelblue; } */
+        .Gallery-article {
+            border-radius: .5em;
+            margin-bottom: var(--gutter);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .Gallery-image { 
+            display: block;
+            width: 100%;
+        }
+
+    @media screen and (min-width: 400px) {
+        .Gallery {
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (min-width: 620px) {
+        .Gallery-article { 
+            width: calc((100% / 2) - var(--gutter));
+        }
+        .Gallery-article:nth-child(even) { margin-left: var(--gutter); }
+    }
+    @media screen and (min-width: 920px) {
+        .Gallery-article { 
+            width: calc((100% / 3)) - var(--gutter));
+        }
+    }
+
+	</style>
+
+</head>
+<body>
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;"> 
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">De Arquitetura</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html" style="color: #ffdd08;" class="navlink">Home</a></li>
+				<li><a href="Comerciais.html" style="color: #ffdd08;">Comerciais</a></li>
+				<li><a href="#" style="color: #ffdd08;">Residenciais</a></li>
+				<li><a href="QuemSomos.html" style="color: #ffdd08;">Quem Somos</a></li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+	
+
+    <main>
+        <h2 class="main-title" style="color: #ffdd08;">Projetos Residenciais</h2>
+        <section class="Gallery">
+            <article class="Gallery-article">
+                <img src="imagens/imagem11.jpg" alt="important text" class="Gallery-image">
+            </article>
+                <article class="Gallery-article">
+                <img src="imagens/imagem12.jpg" alt="" class="Gallery-image">
+            </article>
+                <article class="Gallery-article">
+                <img src="imagens/imagem13.jpg" alt="" class="Gallery-image">
+            </article>
+                <article class="Gallery-article">
+                <img src="imagens/imagem14.jpg" alt="" class="Gallery-image">
+            </article>
+                <article class="Gallery-article">
+                <img src="imagens/imagem15.jpg" alt="" class="Gallery-image">
+            </article>
+                <article class="Gallery-article">
+                <img src="imagens/imagem16.jpg" alt="" class="Gallery-image">
+            </article>
+        </section>
+    </main>
+
+	<footer class="bg-light py-3" style="background-color: black;">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-4">
+			  <h5 style="color: #ffdd08;"><strong>Redes Sociais</strong></h5>
+			  <a href="https://www.facebook.com/dearquiteturaeconstrucao"><img src="img/facebook-amarelo.png" alt="Facebook icon" style="padding-left: 5px;"></a>
+			  <a href="https://www.instagram.com/dearquiteturaeconstrucao"><img src="img/instagram-amarelo.png" alt="Instagram icon"></a>
+			</div>
+			<div class="col-md-4">
+			  <h5 style="color: #ffdd08;"><strong>Contato</strong></h5>
+			  <p style="padding-left: 5px; color: #ffdd08;"> Telefone: (18) 99127-7465</p>
+			  <p style="padding-left: 5px; color: #ffdd08;">E-mail: dearquitetura@gmail.com</p>
+			</div>
+			<div class="col-md-4">
+			  <h5 style="color: #ffdd08;"><strong>Endereço</strong></h5>
+			  <iframe style="margin-left: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2210.276033270557!2d-50.335446792471146!3d-21.302069173894626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496159ab4e38391%3A0x8a8361e5f7facb5c!2sDE%20Arquitetura%20%7C%20Constru%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1675887995620!5m2!1spt-BR!2sbr" 
+			  width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col text-center">
+			  <p class="text-muted" style="margin-top: 10px;">Copyright 2023 - Todos os direitos Reservados</p>
+			</div>
+		  </div>
+		</div>
+	</footer>
+
+	<img id="imagem_whats" class="imagem_whats" src="imagens/whatsflutuante.png"  onClick="window.open('https://api.whatsapp.com/send?phone=5518991277465&text=Ol%C3%A1 gostei dos projetos do site e gostaria de mais informações.', '_blank');">			
+
+	<div id="msg1" style="visibility: hidden;" >Fale conosco via WhatsApp</div>
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	// ativa o box de mensagem
+	function showIt2() {
+	document.getElementById("msg1").style.visibility = "visible";
+	}
+	setTimeout("showIt2()", 5000); // Depois 5 segs
+
+	// desativa o box de mensagem
+	function hiddenIt() {
+	document.getElementById("msg1").style.visibility = "hidden";
+	}
+	setTimeout("hiddenIt()", 15000); // Depois 15 segs
+
+	// ativa novamente o box de mensagem
+	function showIt3() {
+	document.getElementById("msg1").style.visibility = "visible";
+	}
+	setTimeout("showIt3()", 35000); // Depois 35 segs
+
+	// Clique para esconder o box de mensagem
+	msg1.onclick = function ()  {
+		document.getElementById('msg1').style.visibility = "hidden"; 
+	};
+</script>
+
+
+</html>
